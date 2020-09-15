@@ -5,6 +5,7 @@ var app = express();
 var data = require("./data.js"); // 导入自定义的路由模块
 
 
+
 // 中间件
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // 将中间件注入express,
