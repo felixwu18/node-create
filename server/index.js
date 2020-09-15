@@ -24,6 +24,7 @@ app.all("*", function (req, res, next) {
     next();
 });
 
+
 //处理post请求
 app.post('/', function (req, res) {
   console.log(req.body,1111111); //前端发送的请求内容
@@ -35,12 +36,12 @@ app.get('/33/*', function(req, res) {
     console.log(req.body); //前端发送的请求内容
   //   res.send('get successfully!');
     res.send(data.d1);
-  });
+});
 app.get('/66/*', function(req, res) {
     console.log(res, 232323); //前端发送的请求内容
     res.send('get successfully!');
     // res.send(obj);
-  });
+});
 //监听
 // var server = app.listen(6600, function() {
 //   console.log('引用实例,访问地址为 http://127.0.0.1:6600');
