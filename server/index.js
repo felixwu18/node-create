@@ -10,6 +10,8 @@ var data = require("./data.js"); // 导入自定义的路由模块
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // 将中间件注入express,
 
+
+
 //设置跨域访问（设置在所有的请求前面即可）
 app.all("*", function (req, res, next) {
   //设置允许跨域的域名，*代表允许任意域名跨域
